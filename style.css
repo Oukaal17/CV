@@ -37,6 +37,18 @@ header {
     align-items: center;
     width: 70%;
 }
+._2y_4{
+    text-align: center;
+}
+.telefono{
+    display: inline-flex;
+}
+.fa-brands{
+    /* background-color: salmon; */
+    padding: 10px;
+    color: green;
+    font-size: 1.5rem;
+}
 
 .nombre {
     margin: 10px;
