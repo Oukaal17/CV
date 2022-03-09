@@ -12,12 +12,14 @@ body {
 ul {
     list-style: none;
 }
-
+.contact {
+    display: none;
+}
 /* -------------------- TOP -------------------- */
 header {
     display: flex;
     position: relative;
-    background-image: radial-gradient(lightpink, lightsteelblue);
+    background-image: linear-gradient(lightblue, lightgreen);
     justify-content: space-around;
     align-items: center;
     padding-top: 25px;
@@ -41,7 +43,8 @@ header {
 }
 
 .telefono {
-    display: inline-flex;;
+    display: inline-flex;
+    ;
 }
 
 .fa-brands {
@@ -70,14 +73,11 @@ main {
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    background-image: linear-gradient(270deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);
+    background-image: linear-gradient(-100deg, lightblue, lightgreen);
 }
-.contact {
-    --display: none;
-    display: block;
-    bottom: 0;
-    right: 0;
-}
+
+
+
 /* -------------------- BLOQUE 1 -------------------- */
 .bloque1 {
     display: flex;
@@ -243,6 +243,7 @@ main {
     h1 {
         font-size: 2rem;
     }
+    
 }
 
 @media screen and (max-width: 883px) {
@@ -250,13 +251,24 @@ main {
         width: 190px;
         height: 270px;
     }
+    header {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background-image: linear-gradient(lightblue, lightgreen);
+        justify-content: center;
+        align-items: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        height: 40%;
+    }
 
     .texto {
+        margin-top: 20px;
         --background-color: lightcoral;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 70%;
+        width: 60%;
     }
 
     .nombre {
@@ -271,7 +283,43 @@ main {
         display: flex;
         flex-direction: column;
     }
-
+    .contact {
+        width: 100%;
+        display: flex;
+        position: fixed;
+        bottom: 3%;
+        left: 30%;
+    }
+    
+    .btwhats {
+        cursor: pointer;
+        border-radius: 40px;
+        border: 2px solid green;
+        background-color: lightgreen;
+        padding: 3px 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-right: 20px;
+    }
+    .btinsta {
+        cursor: pointer;
+        border-radius: 40px;
+        border: 2px solid purple;
+        background-color: lightskyblue;
+        padding: 3px 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-right: 20px;
+    }
+    .btLinkedin{
+        cursor: pointer;
+        border-radius: 40px;
+        border: 2px solid blue;
+        background-color: lightskyblue;
+        padding: 3px 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
     .bloque1, .bloque2 {
         width: 80%;
         margin: 10px;
