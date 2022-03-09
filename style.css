@@ -17,7 +17,7 @@ ul {
 header {
     display: flex;
     position: relative;
-    background-image: radial-gradient(lightgoldenrodyellow, lightpink, lightgreen);
+    background-image: radial-gradient(lightpink, lightsteelblue);
     justify-content: space-around;
     align-items: center;
     padding-top: 25px;
